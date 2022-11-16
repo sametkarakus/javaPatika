@@ -1,3 +1,5 @@
+package AllPatikaJava101;
+
 import java.util.Scanner;
 
 /**
@@ -45,13 +47,11 @@ public class P00_averageCalculate {
         System.out.println("muzik notunuz : " + muzik);
 
         avg = matematik + fizik + kimya +turkce + tarih + muzik;
-        double sonuc = avg / 6;
+        double ortalama = avg / 6;
 
-        if (sonuc>60){
-            System.out.println("Gectiniz : " + sonuc);
-        }else  {
-            System.out.println("Kaldiniz : " + sonuc);
-        }
+            System.out.println("Ortalamanız : " + ortalama);
+        String sonuc = (ortalama > 60) ? "Sınıfı Geçti" : "Sınıfta Kaldı";
+        System.out.println(sonuc);
 
     }
 
