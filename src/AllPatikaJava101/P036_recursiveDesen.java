@@ -2,8 +2,9 @@ package AllPatikaJava101;
 
 
 import java.util.Scanner;
-public class P036_recursiveDesenegore {
 
+
+public class P036_recursiveDesen {
     static boolean design(int a, int b) {
         System.out.print(a + " ");
         if (a <= 0) {
@@ -13,7 +14,9 @@ public class P036_recursiveDesenegore {
             }
             return true;
         }
-        a -= 5;
+        if (a > 0) {
+            a -= 5;
+        }
         return design(a, b);
     }
 
